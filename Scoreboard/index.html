@@ -1,0 +1,60 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                <h3>HOME</h3>
+                <h1 id="home">0</h1>
+                <div id="homeFaul">
+                    <h1 class="faul" id="hone"></h1>
+                    <h1 class="faul" id="htwo"></h1>
+                    <h1 class="faul" id="hthree"></h1>
+                    <h1 class="faul" id="hfour"></h1>
+                    <h1 class="faul" id="hfive"></h1>
+                </div>
+                <div class="points">
+                    <button id="point1" onclick="addPointToHome(1)">+1</button>
+                    <button id="point2" onclick="addPointToHome(2)">+2</button>
+                    <button id="point3" onclick="addPointToHome(3)">+3</button>
+                </div>
+            </div>
+            <div>
+                <button class="triangle-left-per" onclick="perMinus()"></button>
+                <button class="triangle-left-faul" onclick="homeFaul()"></button>
+            </div>
+            <div>
+                <p id="timer">12:00</p>
+                <p id="periodText">1st PERIOD</p>
+                <h2 id="period">PERIOD</h2>
+                <h2 id="faul">FAUL</h2>
+            </div>
+            <div>
+                <button class="triangle-right-per" onclick="perPlus()"></button>
+                <button class="triangle-right-faul" onclick="guestFaul()"></button>    
+            </div>
+            <div>
+                <h3>GUEST</h3>
+                <h1 id="guest">0</h1>
+                <div id="guestFaul">
+                    <h1 class="faul" id="gone"></h1>
+                    <h1 class="faul" id="gtwo"></h1>
+                    <h1 class="faul" id="gthree"></h1>
+                    <h1 class="faul" id="gfour"></h1>
+                    <h1 class="faul" id="gfive"></h1>                
+                </div>
+                <div class="points">
+                    <button id="point1" onclick="addPointToGuest(1)">+1</button>
+                    <button id="point2" onclick="addPointToGuest(2)">+2</button>
+                    <button id="point3" onclick="addPointToGuest(3)">+3</button>
+                </div>
+            </div>
+        </div>
+        <div id="buttons">
+            <button id="newGame" onclick="newGame()">NEW GAME</button>
+            <button id="startReset" >START</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
