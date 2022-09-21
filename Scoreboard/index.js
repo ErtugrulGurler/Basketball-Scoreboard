@@ -10,7 +10,7 @@ function addPointToGuest(n){
 }
 function newGame(){
 
-    /*document.location.reload(true);*/
+    document.location.reload(true);
     
 }
 let homeCounter=0;
@@ -46,38 +46,6 @@ function perMinus(){
     if (periodCounter==3){document.getElementById("periodText").textContent=periodCounter+"rd PERIOD";return 0;}
        
 }
-/*
-let startingMinutes=1;
-let time =startingMinutes*10;
-const countDownEl=document.getElementById("timer");
-let timer;
-
-function start() {    
-    clearInterval(timer);
-  timer = setInterval(( ) =>{
-    updateCountDown()
-  }, 1000);
-}
-
-function stop(){
-    clearInterval(timer);    
-}
-
-function updateCountDown(){
-    
-    const minutes = Math.floor(time / 60);
-    let seconds = time % 60;
-    seconds =seconds < 10 ? "0"+seconds:seconds;
-    
-    countDownEl.innerHTML = `${minutes}:${seconds}`;
-    time--;
-    if(seconds<=0){
-        countDownEl.innerHTML = "OVER";
-        countDownEl.style.fontSize="200px";
-        clearInterval(timer);
-        return 0;}
-}
-*/
 function startTimer() {
     counter=59;
     min = 12;
@@ -94,7 +62,7 @@ function resetTimer(){
 	timer.innerHTML = "12:00";
 }
 
-// ------------------------------------- Countdown Output
+
 function currentTime() {
     counter++;
     if(counter == 60){
@@ -124,13 +92,13 @@ function currentTime() {
 	sec--;
 }
 
-// ------------------------------------- Variables
+
 var countdown, sec;
 var toggle = true;
 var timer = document.getElementById('timer');
 var startReset = document.getElementById('startReset');
 
-// ------------------------------------- Start/Reset Events
+
 startReset.onclick = function(){
 	switch(toggle){
 		case true:
